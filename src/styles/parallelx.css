@@ -1,0 +1,47 @@
+.more-info-section {
+  background-image: linear-gradient(
+      rgba(22, 22, 22, 0.8),
+      rgba(22, 22, 22, 0.7)
+    ),
+    url(../images/parallelxbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.more-info-section .img-section {
+  position: relative;
+}
+
+.more-info-section img {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  max-width: 100%;
+  width: 70%;
+}
+
+@media screen and (max-width: 1200px) {
+  .more-info-section img {
+    position: absolute;
+    bottom: 10%;
+    top: 0;
+    left: 55%;
+    max-width: 100%;
+    width: 50%;
+    transform: scaleX(1);
+  }
+
+  .para-width {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .more-info-section img {
+    display: none;
+  }
+}
