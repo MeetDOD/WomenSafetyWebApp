@@ -73,3 +73,7 @@ Open your web browser and navigate to: `http://localhost:3000`.
 
 - Users can register and log in to access the distress signal, incident reporting, and other features.
 - Admins can access the admin panel by visiting /admin and log in using admin credentials.
+
+**Screenshot**
+
+![image](https://github.com/user-attachments/assets/255eca28-51af-4d59-8466-cd5fd2f0daf7)
