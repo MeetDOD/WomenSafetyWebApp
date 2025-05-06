@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Women's Safety Web App Build in 24 Hours at BVP Hackathon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This web application is designed to enhance women's safety by providing a platform where they can seek help in distress situations. The app allows users to send distress signals, report incidents, and provides an admin panel to manage and review incident reports.
 
-## Available Scripts
+### Key Features
+- **Distress Signal:** Users can press a button on the homepage to send a distress signal. An email is sent to the user's relatives, parents, and nearby individuals with a map displaying the user's location.
 
-In the project directory, you can run:
+- **Incident Reporting:** Users can report incidents via a form, providing crucial information about the incident.
 
-### `npm start`
+- **Admin Panel:** Admins can access an admin panel to view and manage all incident reports, including details of distress signals.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Media Storage:** Media files, such as images or videos related to incidents, are stored in an AWS S3 bucket for secure and scalable storage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+- **MERN Stack:** MongoDB, Express.js, React.js, Node.js for building the web application.
 
-### `npm test`
+- **AWS S3:** Amazon Simple Storage Service (S3) for storing media files securely.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+Follow these steps to set up and run the project locally:
 
-### `npm run build`
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/Slacky300/WomenSafetyHackathonApp.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ```bash
+  cd BVP_HACKATHON
+```
+## Install server dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  cd server
+  npm install
+```
 
-### `npm run eject`
+## Install client dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+  cd ../client
+  npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Set up AWS S3:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create an AWS S3 bucket and configure access keys in your environment variables.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Configure the application:
 
-## Learn More
+Create a `.env` file in the server directory and configure environment variables such as database connection, AWS S3 credentials, and email settings.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  cd ./server
+  npm start
 
-### Code Splitting
+```
+## Start the client:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  cd ../client
+  npm start
+```
 
-### Analyzing the Bundle Size
+## Access the application:
+Open your web browser and navigate to: `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+- Users can register and log in to access the distress signal, incident reporting, and other features.
+- Admins can access the admin panel by visiting /admin and log in using admin credentials.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Screenshot**
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/user-attachments/assets/255eca28-51af-4d59-8466-cd5fd2f0daf7)
